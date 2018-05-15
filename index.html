@@ -4,6 +4,9 @@
 <head>
   <title>My first Vue app</title>
   <script src="https://unpkg.com/vue"></script>
+  <!--org chart-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-orgchart/dist/vue-orgchart.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -47,7 +50,13 @@
     <input type="range" min="10" max="2000" v-model.number="updateInterval">
   </div>
   <!--end cool graphics-->
+
+  <!--org chart-->
+  <div id="app6">
+    <vo-basic :data="chartData"></vo-basic>
+  </div>
 </body>
+
 </html>
 
 

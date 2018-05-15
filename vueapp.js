@@ -119,3 +119,24 @@ function generatePoints(stats) {
     return point.x + ',' + point.y
   }).join(' ')
 }
+
+var Main = {
+  created() {
+    this.chartData = {
+      name: 'Manager',
+      children: [
+        { name: 'Member1' },
+        {
+          name: 'Member2',
+          children: [{ name: 'Mem2-child' }]
+        },
+        {
+          name: 'Member3',
+          children: [{ name: 'Mem3-child' }]
+        }
+      ]
+    }
+  }
+}
+var Ctor = Vue.extend(Main)
+new Ctor().$mount('#app6')

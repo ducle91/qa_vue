@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/vue-orgchart/dist/style.min.css");
+
 svg { display: block; }
 polygon { fill: #41B883; }
 circle {
